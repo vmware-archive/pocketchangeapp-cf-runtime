@@ -1,3 +1,8 @@
+(This is a fork from https://github.com/tjweir/pocketchangeapp, but github doesn't allow forking a repository twice).
+
+This fork illustrates how to use Cloud Foundry runtime to connect to database service from a Lift application.
+
+
 This is the demo application that we're building to support the Lift Book.
 
 [Lift Book repo](http://www.github.com/tjweir/liftbook/)
