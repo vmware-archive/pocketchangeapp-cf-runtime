@@ -174,10 +174,10 @@ object DBVendor extends ConnectionManager {
       Class.forName("org.apache.derby.jdbc.EmbeddedDriver")
       val dm = DriverManager.getConnection("jdbc:derby:pca_example;create=true")
       */
+      import org.cloudfoundry.runtime.env._
+      import org.cloudfoundry.runtime.service.relational._
+      Full(new MysqlServiceCreator(new CloudEnvironment()).createSingletonService().service.getConnection())
 
-      Class.forName("org.h2.Driver")
-      val dm = DriverManager.getConnection("jdbc:h2:pca_example")
-      Full(dm)
     } catch {
       case e : Exception => e.printStackTrace; Empty
     }
