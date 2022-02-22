@@ -1,3 +1,5 @@
+# pocketchangeapp-cf-runtime is no longer actively maintained by VMware, Inc.
+
 (This is a fork from https://github.com/tjweir/pocketchangeapp, but github doesn't allow forking a repository twice).
 
 This fork illustrates how to use Cloud Foundry runtime to connect to database service from a Lift application.
